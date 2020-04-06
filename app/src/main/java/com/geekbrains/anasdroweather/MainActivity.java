@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         myData = MyData.getInstance();
+        init();
     }
 
     @Override
@@ -28,8 +29,8 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
         dayWeatPlaceId = R.id.dayWeatherFrame;
         weekWeatPlaceId = R.id.weekWeatherFrame;
         curWeatFragment = new CurrentWeatherFragment(currentWeatPlaceId);
+        curWeatFragment.postFragment(this);
         Log.d("MainActivity", "CurrentWeatherFragment");
-
     }
 
 
