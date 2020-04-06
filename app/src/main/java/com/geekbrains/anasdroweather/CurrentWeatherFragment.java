@@ -37,13 +37,11 @@ private ImageView weatherImageView;
 //создаем View
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //не даём пересоздать фрагмент при повороте экрана
-//        setRetainInstance(true);
+        setRetainInstance(true);
         View view = inflater.inflate(R.layout.fragment_current_weather, container, false);
         findViews(view);
         return view;
     }
-
-
 
 
     @Override

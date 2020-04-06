@@ -6,5 +6,6 @@
     <string name="wind">wind</string>
     <string name="select">select</string>
     <string name="temperatureTextView">temperature</string>
+    <string name="hourly">Hourly</string>
 
 </resources>
