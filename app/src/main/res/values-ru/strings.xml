@@ -7,6 +7,7 @@
     <string name="pressure">давление</string>
     <string name="wind">ветер</string>
     <string name="select">выбрать</string>
+    <string name="temperatureTextView">температура</string>
 
 </resources>
 

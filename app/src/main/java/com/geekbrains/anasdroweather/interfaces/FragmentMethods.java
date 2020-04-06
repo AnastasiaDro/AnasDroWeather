@@ -1,4 +1,4 @@
-package com.geekbrains.anasdroweather;
+package com.geekbrains.anasdroweather.interfaces;
 
 import android.view.View;
 
