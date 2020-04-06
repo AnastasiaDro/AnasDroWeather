@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AnasDroWeather</string>
+    <string name="city">City</string>
+    <string name="tWeather">t</string>
+    <string name="pressure">pressure</string>
+    <string name="wind">wind</string>
+    <string name="select">select</string>
+
 </resources>
