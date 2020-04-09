@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
     int weekWeathPlaceId;
     CurrentWeatherFragment curWeathFragment;
     DayWeatherFragment dayWeathFragment;
+    WeekWeatherFragment weekWeatherFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +34,14 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
         curWeathFragment = new CurrentWeatherFragment(currentWeathPlaceId);
         curWeathFragment.postFragment(this);
         Log.d("MainActivity", "Posted CurrentWeatherFragment");
-        
+
         dayWeathFragment = new DayWeatherFragment(dayWeathPlaceId);
         dayWeathFragment.postFragment(this);
         Log.d("MainActivity", "Posted DayWeatherFragment");
 
+        weekWeatherFragment = new WeekWeatherFragment(weekWeathPlaceId);
+        weekWeatherFragment.postFragment(this);
+        Log.d("MainActivity", "Posted WeekWeatherFragment");
 
     }
 
