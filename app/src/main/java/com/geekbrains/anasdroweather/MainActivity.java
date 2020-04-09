@@ -2,10 +2,13 @@ package com.geekbrains.anasdroweather;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.geekbrains.anasdroweather.interfaces.ActivMethods;
+
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements ActivMethods {
 
@@ -13,9 +16,12 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
     int currentWeathPlaceId;
     int dayWeathPlaceId;
     int weekWeathPlaceId;
+
     CurrentWeatherFragment curWeathFragment;
     DayWeatherFragment dayWeathFragment;
     WeekWeatherFragment weekWeatherFragment;
+
+    InterfaceChanger interfaceChanger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +29,11 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
         setContentView(R.layout.activity_main);
         myData = MyData.getInstance();
         init();
+//создаём изменитель интерфейса
+        interfaceChanger = new InterfaceChanger(this);
+//изменяем тему, если это возможно, в соответствии с текущим временем
+        interfaceChanger.setAutoTheme();
+
     }
 
     @Override
@@ -44,6 +55,10 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
         Log.d("MainActivity", "Posted WeekWeatherFragment");
 
     }
+
+
+
+
 
 
 }

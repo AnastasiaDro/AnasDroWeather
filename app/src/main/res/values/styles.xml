@@ -8,4 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!-- Стиль для тёмного ActionBar. -->
+    <style name="MyDarkActionBar" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:background">@color/colorMyDarkBackGround</item>
+        <item name="android:titleTextStyle">@color/colorMyDarkText</item>
+    </style>
+
+
+    <style name="MyDarkTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorMyPrimaryDark</item>
+        <item name="android:actionBarTheme">@style/MyDarkActionBar</item>
+        <item name="colorPrimaryDark">@color/colorMyDarkBackGround</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorMyDarkText</item>
+        <item name="android:background">@color/colorMyDarkBackGround</item>
+    </style>
+
+    <style name="MyLightTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
 </resources>
