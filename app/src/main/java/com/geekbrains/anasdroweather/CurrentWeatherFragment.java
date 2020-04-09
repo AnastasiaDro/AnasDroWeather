@@ -17,6 +17,7 @@ import com.geekbrains.anasdroweather.interfaces.Observer;
 
 public class CurrentWeatherFragment extends Fragment implements FragmentMethods, Observer {
 
+//используемые View
 private TextView cityTextView;
 private TextView temperatureTextView;
 private TextView pressureTextView;

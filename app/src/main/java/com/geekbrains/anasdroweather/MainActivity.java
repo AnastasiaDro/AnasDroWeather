@@ -10,10 +10,11 @@ import com.geekbrains.anasdroweather.interfaces.ActivMethods;
 public class MainActivity extends AppCompatActivity implements ActivMethods {
 
     MyData myData;
-    int currentWeatPlaceId;
-    int dayWeatPlaceId;
-    int weekWeatPlaceId;
-    CurrentWeatherFragment curWeatFragment;
+    int currentWeathPlaceId;
+    int dayWeathPlaceId;
+    int weekWeathPlaceId;
+    CurrentWeatherFragment curWeathFragment;
+    DayWeatherFragment dayWeathFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +26,18 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
 
     @Override
     public void init() {
-        currentWeatPlaceId = R.id.currentWeatherFrame;
-        dayWeatPlaceId = R.id.dayWeatherFrame;
-        weekWeatPlaceId = R.id.weekWeatherFrame;
-        curWeatFragment = new CurrentWeatherFragment(currentWeatPlaceId);
-        curWeatFragment.postFragment(this);
-        Log.d("MainActivity", "CurrentWeatherFragment");
+        currentWeathPlaceId = R.id.currentWeatherFrame;
+        dayWeathPlaceId = R.id.dayWeatherFrame;
+        weekWeathPlaceId = R.id.weekWeatherFrame;
+
+        curWeathFragment = new CurrentWeatherFragment(currentWeathPlaceId);
+        curWeathFragment.postFragment(this);
+        Log.d("MainActivity", "Posted CurrentWeatherFragment");
+        dayWeathFragment = new DayWeatherFragment(dayWeathPlaceId);
+        dayWeathFragment.postFragment(this);
+        Log.d("MainActivity", "Posted DayWeatherFragment");
+
+
     }
 
 
