@@ -11,102 +11,128 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="TextView" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
 
             <TextView
                 android:id="@+id/firstDayTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/scndDayTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/trdDayTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/fourthDayTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/fifthfDayTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/sixDayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/sevthDayTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
-                android:id="@+id/firstDayWeatherText"
+                android:id="@+id/firstDayTempText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/scndDayWeatherText"
+                android:id="@+id/scndDayTempText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/trdDayWeatherText"
+                android:id="@+id/trdDayTempText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"
+                />
 
             <TextView
-                android:id="@+id/fourthDayWeatherText"
+                android:id="@+id/fourthDayTempText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"
+                />
 
             <TextView
-                android:id="@+id/fifthDayWeatherText"
+                android:id="@+id/fifthDayTempText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/sixDayWeatherText"
+                android:id="@+id/sixDayTempText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/svnDayWeatherText"
+                android:id="@+id/svnDayTempText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:gravity="center"/>
         </TableRow>
 
         <TableRow
