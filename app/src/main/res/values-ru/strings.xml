@@ -8,7 +8,10 @@
     <string name="wind">ветер</string>
     <string name="select">выбрать</string>
     <string name="temperatureTextView">температура</string>
-    <string name="hourly">Ежечасный</string>
+    <string name="hourly">В течение дня</string>
 
+    <string name="morning">Утро</string>
+    <string name="afternoon">День</string>
+    <string name="evening">Вечер</string>
 </resources>
 
