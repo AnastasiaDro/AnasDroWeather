@@ -28,12 +28,11 @@ public class InterfaceChanger implements Observer {
 //не получилось менять цвет actionBar-а через ресурсы, поэтому поменяем так
                     activity.setTheme(R.style.MyDarkTheme);
                     actionBarColor = ContextCompat.getColor(activity, R.color.colorMyPrimaryDark);
-                    actionBar.setBackgroundDrawable(new ColorDrawable(actionBarColor));
                 } else {
                     activity.setTheme(R.style.MyLightTheme);
                     actionBarColor = ContextCompat.getColor(activity, R.color.colorPrimary);
-                    actionBar.setBackgroundDrawable(new ColorDrawable(actionBarColor));
                 }
+                actionBar.setBackgroundDrawable(new ColorDrawable(actionBarColor));
             }
         }
 
