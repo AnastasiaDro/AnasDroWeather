@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements ActivMethods {
         curWeathFragment = new CurrentWeatherFragment(currentWeathPlaceId);
         curWeathFragment.postFragment(this);
         Log.d("MainActivity", "Posted CurrentWeatherFragment");
+        
         dayWeathFragment = new DayWeatherFragment(dayWeathPlaceId);
         dayWeathFragment.postFragment(this);
         Log.d("MainActivity", "Posted DayWeatherFragment");
